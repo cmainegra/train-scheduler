@@ -12,6 +12,8 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <script src="assets/javascript/script.js"></script>
 </head>
 
 <body>
@@ -30,7 +32,7 @@
           <!-- Current Employees-->
           <div class="card mb-4">
             <div class="card-body">
-              <h3 class="card-title">Current Employees</h3>
+              <h3 class="card-title">Trains</h3>
               <table class="table table-sm table-hover" id='employee-table'>
                 <thead>
                   <tr>
@@ -52,40 +54,32 @@
 
     <div class="row">
       <div class="col-md-12">
-        <!-- Add Employee  -->
         <div class="card mb-4 p-4">
           <div class="card-body">
             <h3 class="card-title">Add Train</h3>
-            <!-- Entry Form -->
             <form>
               <div class="form-group row">
-                <label for="employee-name-input">Train Name</label>
-                <input class="form-control" id="employee-name-input" placeholder="" type="text">
+                <label for="train-name-input">Train Name</label>
+                <input class="form-control" id="train-name-input" placeholder="" type="text">
               </div>
               <div class="form-group row">
-                <label for="role-input">Depature</label>
-                <input class="form-control" id="role-input" placeholder="" type="text">
+                <label for="destination-input">Depature</label>
+                <input class="form-control" id="destination-input" placeholder="" type="text">
               </div>
               <div class="form-group row">
                 <label for="start-input">Arrival</label>
                 <input class="form-control" id="start-input" placeholder="" type="text">
               </div>
               <div class="form-group row">
-                <label for="rate-input">Interval</label>
-                <input class="form-control" id="rate-input" placeholder="" type="text">
+                <label for="interval-input">Interval</label>
+                <input class="form-control" id="interval-input" placeholder="" type="text">
               </div>
-              <button class="btn btn-primary float-right" id="add-employee-btn">Submit</button>
+              <button class="btn btn-primary float-right" id="add-train-button">Submit</button>
             </form>
           </div>
         </div>
       </div>
     </div>
-
-   
   </div>
-
-  <!-- JavaScript -->
-  <script src="timesheetLogic.js"></script>
 </body>
-
 </html>
